@@ -14,6 +14,8 @@ import PosterFallback from "../../assets/no-poster.png";
 // import Genres from "../genres/Genres";
 
 import "./Carousel.scss";
+import CircleRating from "../CircleRating/CircleRating";
+import Genres from "../Genres/Genres";
 const Carousel = ({ data, loading, endpoint, title }) => {
     const carouselContainer = useRef();
     const { url } = useSelector((state) => state.home);
@@ -75,7 +77,7 @@ const Carousel = ({ data, loading, endpoint, title }) => {
                                         )
                                     }
                                 >
-                                    {/* <div className="posterBlock">
+                                    <div className="posterBlock">
                                         <Img src={posterUrl} />
                                         <CircleRating
                                             rating={item.vote_average.toFixed(
@@ -85,7 +87,7 @@ const Carousel = ({ data, loading, endpoint, title }) => {
                                         <Genres
                                             data={item.genre_ids.slice(0, 2)}
                                         />
-                                    </div> */}
+                                    </div>
                                     <div className="textBlock">
                                         <span className="title">
                                             {item.title || item.name}
