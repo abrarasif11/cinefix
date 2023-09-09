@@ -14,13 +14,13 @@ const Footer = () => {
   return (
     <footer className="footer">
       <ContentWrapper>
-        <ul className="menuItems">
+        {/* <ul className="menuItems">
           <li className="menuItem">Terms Of Use</li>
           <li className="menuItem">Privacy-Policy</li>
           <li className="menuItem">About</li>
           <li className="menuItem">Blog</li>
           <li className="menuItem">FAQ</li>
-        </ul>
+        </ul> */}
         <div className="infoText">
           Your go-to source for the latest movies. Download, relax, and enjoy!
           Your cinematic adventure begins here. Download movies with ease.
