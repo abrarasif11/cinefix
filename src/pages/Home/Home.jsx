@@ -1,12 +1,16 @@
+import Popular from '../Popular/Popular';
 import HeroBanner from './HeroBanner/HeroBanner';
 import './Home.scss';
+import TopRated from './TopRated/TopRated';
 import Tranding from './Tranding/Tranding';
 const Home = () => {
     return (
         <div className='homepage'>
             <HeroBanner />
             <Tranding/>
-            <div style={{height: 1000}}></div>
+            <Popular/>
+            <TopRated/>
+            
         </div>
     )
 }

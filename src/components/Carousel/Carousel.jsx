@@ -1,4 +1,4 @@
-import  { useRef } from "react";
+import { useRef } from "react";
 import {
     BsFillArrowLeftCircleFill,
     BsFillArrowRightCircleFill,
@@ -10,9 +10,6 @@ import dayjs from "dayjs";
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 import Img from "../lazyLoadImage/Img";
 import PosterFallback from "../../assets/no-poster.png";
-// import CircleRating from "../circleRating/CircleRating";
-// import Genres from "../genres/Genres";
-
 import "./Carousel.scss";
 import CircleRating from "../CircleRating/CircleRating";
 import Genres from "../Genres/Genres";
@@ -71,8 +68,7 @@ const Carousel = ({ data, loading, endpoint, title }) => {
                                     className="carouselItem"
                                     onClick={() =>
                                         navigate(
-                                            `/${item.media_type || endpoint}/${
-                                                item.id
+                                            `/${item.media_type || endpoint}/${item.id
                                             }`
                                         )
                                     }
