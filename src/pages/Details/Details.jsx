@@ -1,8 +1,9 @@
+import DetailsBanner from './DetailBanner/DetailsBanner';
 import './Details.scss'
 
 const Details = () => {
   return (
-    <div>Details</div>
+    <div><DetailsBanner/></div>
   )
 }
 
