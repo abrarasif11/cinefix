@@ -60,21 +60,11 @@ function App() {
     <BrowserRouter>
       <Header></Header>
       <Routes>
-        <Route path='/'
-          element={<Home></Home>}
-        ></Route>
-        <Route path='/mediaType/:id'
-          element={<Details></Details>}
-        ></Route>
-        <Route path='/search/:query'
-          element={<SearchResult></SearchResult>}
-        ></Route>
-        <Route path='/explore/:mediaType'
-          element={<Explore></Explore>}
-        ></Route>
-        <Route path='*'
-          element={<ErrorPage></ErrorPage>}
-        ></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/:mediaType/:id" element={<Details />} />
+        <Route path="/search/:query" element={<SearchResult />} />
+        <Route path="/explore/:mediaType" element={<Explore />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
