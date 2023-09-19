@@ -8,10 +8,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Details from './pages/Details/Details';
 import SearchResult from './pages/SearchResult/SearchResult';
-import Explore from './pages/Explore/Explore';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import  Explore  from './pages/Explore/Explore';
 
 function App() {
   const dispatch = useDispatch();
